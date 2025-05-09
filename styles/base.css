@@ -1,0 +1,67 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  background-color: #004466;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #006699;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-me .text {
+  flex: 2;
+}
+
+.about-me .profile-image img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.location h2 {
+  text-align: center;
+}
+
+.location-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location-content img {
+  max-width: 100px;
+}
