@@ -1,41 +1,61 @@
+/* Global Styles */
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0; 
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Navigation Styles */
 nav {
   display: flex;
-  gap: 1rem;
-  background-color: #004466;
-  padding: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: #004466;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #006699;
-  padding: 0.25rem;
-  border-radius: 4px;
+  background-color: #cce7f5;
+  border-radius: 5px;
 }
 
+/* Main Section Styles */
 main {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
   padding: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
+/* Card Styles */
 .card {
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 8px;
 }
+
+/* About Me Section Styles */
 .about-me {
   display: flex;
   align-items: center;
@@ -52,6 +72,7 @@ main {
   border-radius: 50%;
 }
 
+/* Location Section Styles */
 .location h2 {
   text-align: center;
 }
@@ -64,4 +85,74 @@ main {
 
 .location-content img {
   max-width: 100px;
+}
+
+/* Card 1 Styles */
+.card1 h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #004466;
+  padding-bottom: 0.5rem;
+  color: #004466;
+}
+
+.card1 h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Card 2 Styles */
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem;
+  height: 100%;
+  text-align: left;
+}
+
+.card2 h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #004466;
+  color: #333; 
+}
+
+.card2-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.card2-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Link Styles in Card 2 */
+.card2 a:link {
+  color: #004466;
+  text-decoration: none;
+}
+
+.card2 a:hover {
+  text-decoration: underline;
+}
+
+.card2 a:active {
+  color: #003355; 
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
 }
