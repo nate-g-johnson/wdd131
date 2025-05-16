@@ -1,0 +1,40 @@
+/* Header layout: title on left, nav on right */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.navigation {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Remove margins inside nav links */
+.navigation a {
+  margin: 0;
+}
+
+/* Hide hamburger menu */
+#menu {
+  display: none;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
