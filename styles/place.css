@@ -1,0 +1,85 @@
+:root {
+  --main-color: #0038a8;
+  --accent-color: #ce1126;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--light-color);
+}
+
+header, footer {
+  background-color: var(--main-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+.data, .weather {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+}
+
+.weather .icon {
+  display: none;
+}
+
+.weather .mobile-icon {
+  width: 32px;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "data hero weather";
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+  }
+
+  picture {
+    grid-area: hero;
+  }
+
+  .data {
+    grid-area: data;
+  }
+
+  .weather {
+    grid-area: weather;
+  }
+
+  .weather .mobile-icon {
+    display: none;
+  }
+
+  .weather .icon::after {
+    display: inline;
+    margin-left: 0.5rem;
+  }
+
+  .weather .icon {
+    display: inline;
+  }
+}
