@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album</title>
+  <meta name="description" content="WDD 131 – Filtered Temple Album Page for Nathan Johnson." />
+  <meta name="author" content="Nathan Johnson" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 640px)" />
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Filtered Temple Album</h1>
+    <button id="menu">☰</button>
+    <nav class="navigation">
+      <a href="#" data-filter="all">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Temples by Category</h2>
+    <div class="res-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 💲Nathan Johnson, South Carolina💲</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
