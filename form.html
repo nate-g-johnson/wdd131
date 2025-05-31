@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Review</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Nathan Johnson. Product Review Form">
+  <meta name="author" content="Nathan Johnson">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
 </head>
 <body>
   <header>
@@ -50,11 +56,7 @@
 
   <footer>
     <p>&copy; <span id="currentyear"></span> 💲Nathan Johnson, South Carolina💲</p>
+    <p id="lastModified"></p>
   </footer>
-
-  <script src="scripts/form.js"></script>
-  <script>
-    document.getElementById("lastModified").textContent = document.lastModified;
-  </script>
 </body>
 </html>
