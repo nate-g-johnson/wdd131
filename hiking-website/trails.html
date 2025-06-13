@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hike Local - Trails</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Nathan Johnson. Hiking trails page.">
+  <meta name="author" content="Nathan Johnson">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/project.css" />
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trails.html" class="active">Trails</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Local Hiking Trails</h1>
+
+    <section class="trail-section">
+      <div id="trail-list" class="trail-grid">
+        <!-- Trails loaded by JS -->
+      </div>
+      <aside class="weather-widget">
+        <h2>Current Weather</h2>
+        <p><strong>Location:</strong> Fort Mill</p>
+        <p><strong>Temperature:</strong> 86°F</p>
+        <p><strong>Conditions:</strong> Sunny</p>
+      </aside>
+    </section>
+
+    <section class="leave-no-trace">
+      <h2>Leave No Trace</h2>
+      <p>As you enjoy the outdoors, please help preserve it for others by following the 7 Leave No Trace principles:</p>
+      <ol>
+        <li>Plan ahead and prepare</li>
+        <li>Travel and camp on durable surfaces</li>
+        <li>Dispose of waste properly</li>
+        <li>Leave what you find</li>
+        <li>Minimize campfire impact</li>
+        <li>Respect wildlife</li>
+        <li>Be considerate of others</li>
+      </ol>
+      <p>By practicing Leave No Trace, you help ensure our trails stay beautiful and accessible for future generations.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 💲Nathan Johnson, South Carolina💲</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
